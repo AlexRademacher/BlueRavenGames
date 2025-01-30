@@ -44,7 +44,7 @@ div.topBarButton {
     display: inline-block;
     font-size: 18px;
     margin: 2px 2px;
-    left: 40%;
+    left: 37%;
     position: relative;
 }
 
@@ -69,15 +69,19 @@ div.TextBoxTitle {
     text-align: center;
 }
 
-#page1 {
+#TBTpage1 {
     margin: 1px 45%;
 }
 
-#page2 {
-    margin: 1px 40%;
+#TBTpage2 {
+    margin: 1px 41.3%;
 }
 
-div.TextBoxLeft{
+#TBTpage3 {
+    margin: 1px 42.6%;
+}
+
+div.TextBoxLeft {
     color: antiquewhite;
     font-size: 20px;
     width: 40%;
@@ -89,7 +93,7 @@ div.TextBoxLeft{
     margin-left: 7.5%;
 }
 
-div.TextBoxRight{
+div.TextBoxRight {
     color: antiquewhite;
     font-size: 20px;
     width: 40%;
@@ -99,5 +103,16 @@ div.TextBoxRight{
     border-left: dashed;
     border-color: rgb(79, 196, 199);
     margin-left: 51.47%;
+}
+
+div.TextBoxMiddle {
+    color: antiquewhite;
+    font-size: 20px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    border-bottom: dashed;
+    border-color: rgb(79, 196, 199);
 }
 
