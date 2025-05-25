@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -6,46 +7,72 @@ body {
     color: green;
 }
 
-div.topBar {
+header {
     background-color: rgb(81, 94, 108);
-    padding: 6px;
     border-bottom-width: 4px;
     border-bottom-style: double;
     border-bottom-color: rgb(79, 196, 199);;
-    width: 100.1%;
-    margin: -6px -7px;
-    z-index: 2;
+    margin: -9px -7px;
 }
 
-div.topBarTitle {
+section.topBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+section.topBar aside {
+    order: 1;
+}
+
+section.topBar nav.topBarTitle {
     background-color: rgb(79, 196, 199);
+    text-align: center; /* text */
     color: rgb(0, 0, 0);
-    font-size: 19px;
+    font-size: 23px;
     font-weight: bolder;
-    padding: 2px 7px;
+    padding: 7px 5px;
     border-width: 20px;
     border-block-width: 2px;
     border-radius: 2em;
     border-style: solid;
     border-color: rgb(0, 0, 0);
-    top: 7px;
-    left: 46px;
-    position: absolute;
+    margin: 5px 6px;
 }
 
-div.topBarButton {
-    background-color: rgb(64, 141, 143);
+section.topBar nav.topBarTitle:hover {
+    background-color: rgb(49, 114, 115);
+    color: rgb(33, 36, 37);
+    cursor: pointer;
+}
+
+section.topBar section {
+    order: 2;
+    display: flex;
+    height: 120px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+section.topBar section > nav a {
+    display: block; /* how the details are shown */
+    background-color: rgb(64, 141, 143); /* background */
+    text-align: center; /* text */
+    font-size: 18px;
     color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1px 7px;
-    border-radius: 1em;
+    padding: 1px 7px; /* text spacing */
+    border-radius: 1em; /* border */
     border-style: double;
     border-color: rgb(42, 46, 50);
-    display: inline-block;
-    font-size: 18px;
-    margin: 2px 2px;
-    left: 37%;
-    position: relative;
+    margin: 2px 2px; /* outside spacing */
+    position: relative; /* outside positioning */
+}
+
+section.topBar section nav a:hover {
+    background-color: rgb(49, 114, 115);
+    color: rgb(33, 36, 37);
 }
 
 div.TextBox {
@@ -114,5 +141,10 @@ div.TextBoxMiddle {
     text-align: center;
     border-bottom: dashed;
     border-color: rgb(79, 196, 199);
+}
+
+@media (max-width: 700px) {
+        
+
 }
 
