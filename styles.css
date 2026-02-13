@@ -1,6 +1,7 @@
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(58, 112, 141, 0.89);
+    overflow-wrap: anywhere;
 }
 
 .title {
@@ -8,10 +9,10 @@ body {
 }
 
 header {
-    background-color: rgb(81, 94, 108);
+    background-color: rgb(30, 40, 51);
     border-bottom-width: 4px;
     border-bottom-style: double;
-    border-bottom-color: rgb(79, 196, 199);;
+    border-bottom-color: rgb(0, 0, 0);;
     margin: -9px -7px;
 }
 
@@ -27,7 +28,7 @@ section.topBar aside {
 }
 
 section.topBar nav.topBarTitle {
-    background-color: rgb(79, 196, 199);
+    background-color: rgb(76, 171, 173);
     text-align: center; /* text */
     color: rgb(0, 0, 0);
     font-size: 23px;
@@ -37,7 +38,7 @@ section.topBar nav.topBarTitle {
     border-block-width: 2px;
     border-radius: 2em;
     border-style: solid;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(81, 94, 108);
     margin: 5px 6px;
 }
 
@@ -50,10 +51,10 @@ section.topBar nav.topBarTitle:hover {
 section.topBar section {
     order: 2;
     display: flex;
-    height: 120px;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
+    width: fit-content;
 }
 
 section.topBar section > nav a {
@@ -71,16 +72,16 @@ section.topBar section > nav a {
 }
 
 section.topBar section nav a:hover {
-    background-color: rgb(49, 114, 115);
-    color: rgb(33, 36, 37);
+    background-color: rgb(58, 95, 95);
+    color: rgb(122, 140, 145);
 }
 
 div.TextBox {
     background-color: rgb(81, 94, 108);
-    padding: 1px 7px;
+    padding: 10px 40px;
     border-radius: 1em;
-    border-style: double;
-    border-color: rgb(79, 196, 199);
+    border-style: solid;
+    border-color: rgb(9, 12, 13);
     height: min-content;
     margin: 21px 2px;
 }
@@ -96,28 +97,32 @@ div.TextBoxTitle {
     text-align: center;
 }
 
-#TBTpage1 {
-    margin: 1px 45%;
-}
-
-#TBTpage2 {
-    margin: 1px 41.3%;
-}
-
-#TBTpage3 {
-    margin: 1px 42.6%;
+div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.TextBoxLeft {
     color: antiquewhite;
     font-size: 20px;
     width: 40%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-right: 2.25%;
     text-align: center;
     border-right: dashed;
     border-color: rgb(79, 196, 199);
     margin-left: 7.5%;
+}
+
+div.TextBoxleft img {
+    float: left;
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    max-height: 330px;
+    padding-top: 70px;
+    border: dashed;
+    border-color:antiquewhite;
 }
 
 div.TextBoxRight {
@@ -129,22 +134,46 @@ div.TextBoxRight {
     text-align: center;
     border-left: dashed;
     border-color: rgb(79, 196, 199);
-    margin-left: 51.47%;
+    margin-left: 49.8%;
+}
+
+div.TextBoxRight img {
+    float: right;
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    max-height: 330px;
+    padding-top: 70px;
 }
 
 div.TextBoxMiddle {
     color: antiquewhite;
     font-size: 20px;
-
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
     border-bottom: dashed;
-    border-color: rgb(79, 196, 199);
+    border-color: rgb(30, 40, 51);
 }
 
-@media (max-width: 700px) {
-        
+img {
+    float: middle;
+    width: 210px;
+    height: 128px;
+}
 
+@media only screen and (min-width: 625px){
+        section.topBar section{
+            height: 120px;
+            width: 625px;
+        }
+    }
+
+@media only screen and (max-width: 625px) {
+    section.topBar section{
+        justify-content: center;
+        height: 200px;
+        width: 400px;
+    }
 }
 
