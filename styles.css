@@ -4,6 +4,10 @@ body {
     overflow-wrap: anywhere;
 }
 
+a {
+    color: black;
+}
+
 .title {
     color: green;
 }
