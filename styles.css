@@ -55,6 +55,8 @@ section.topBar nav.topBarTitle:hover {
 
 #SmallTitle {
     margin: 1px; 
+    position: relative;
+    transform-origin: top;
 }
 
 section.topBar section {
@@ -218,6 +220,14 @@ div.TabContent {
     border-top: none; 
 }
 
+
+@media only screen and (min-width: 994px){
+    section.topBar section{
+        padding-top: 18px;
+        height: 200px;
+        width: 650px;
+    }
+}
 
 @media only screen and (min-width: 625px){
         section.topBar section{
