@@ -14,3 +14,13 @@ improve traveling the website by adding the contacts link on the bottom of the a
 Be more clear of my role a Game Programmer who is also good at Level Design
 
 ADD MORE OF MY NAME
+
+investigate flex boxes instead of div
+
+have a scroll back to the top for long pages
+
+PUT IN VIDEOS
+
+review the porfolios saved
+
+have a footer
