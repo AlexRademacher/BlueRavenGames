@@ -1,67 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Blue Raven Games</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blue Raven Games</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Top Bar --->
+    <header>
+      <section class="topBar">
+        <nav class="topBarTitle">
+          <a href="index.html">
+            <h2>Blue Raven Games</h2>
+          </a>
+        </nav>
+
+        <section>
+          <nav>
+            <a href="index.html">
+              <h2>Games</h2>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="page4.html">
+              <h2>Projects</h2>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="page2.html">
+              <h2>About Me</h2>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="page3.html">
+              <h2>Contacts</h2>
+            </a>
+          </nav>
+        </section>
+      </section>
+    </header>
+
     
-    <body>
-        <!-- Top Bar --->
-        <header>
-          <section class="topBar">
-            <nav class="topBarTitle">
-              <a href="index.html">
-                <h2>Blue Raven Games</h2>
-              </a>
-            </nav>
-
-            <section>
-              <nav>
-                <a href="index.html">
-                  <h2>Games</h2>
-                </a>
-              </nav>
-              
-              <nav>
-                <a href="page4.html">
-                  <h2>Exploratory Tests</h2>
-                </a>
-              </nav>
-
-              <nav>
-                <a href="page2.html">
-                  <h2>About Me</h2>
-                </a>
-              </nav>
-
-              <nav>
-                <a href="page3.html">
-                  <h2>Contacts</h2>
-                </a>
-              </nav>
-            </section>
-          </section>
-        </header>
-        
-        
-       <div class="TextBox">
-         <div class="center">
-           <div class="TextBoxTitle">
-                <h1>Coming Soon</h1>
-            </div>
-         </div>
-            
-            
-          <div class="TextBoxMiddle">
-            <h3>
-                This will be a page that hold many of my programming that may not get to see the light of day. Show casing my skills and what I can do.
-            </h3>
-            <h3>
-              This website is a good example as I made it myself using HTML and CSS
-            </h3>
-           </div>
+    
+    <div class="TextBox">
+      <div class="center">
+        <div class="TextBoxTitle">
+          <h1>Projects</h1>
         </div>
-    </body>
+      </div>
+
+      <div class="TextBoxMiddle" Style="border-bottom: none">
+        <h3>
+          These are the many projects I have done that may not have been released or been seen by many.
+          <br><br>
+          I have them listed here so you can get a more broader idea of my skills and what I can do.
+        </h3>
+        <h3>This website is a good example as I made it myself using HTML5, CSS, and JavaScript</h3>
+      </div>
+
+      <div class="Tabs">
+        <button class="Tab" onclick="testTabs(event, 'Tab1')">Programming</button>
+        <button class="Tab" onclick="testTabs(event, 'Tab2')">Level Design</button>
+        <button class="Tab" onclick="testTabs(event, 'Tab3')">Extra</button>
+      </div>
+
+      <div id="Tab1" class="TabContent">
+        <div class="center">
+          <h2>Programming</h2>
+        </div>
+        <div class="center">
+          <h3>Coming Soon</h3>
+        </div>
+      </div>
+      <div id="Tab2" class="TabContent">
+        <div class="center">
+          <h2>Level Design</h2>
+        </div>
+        <div class="center">
+          <h3>Coming Soon</h3>
+        </div>
+      </div>
+      <div id="Tab3" class="TabContent">
+        <div class="center">
+          <h2>Extra</h2>
+        </div>
+        <div class="center">
+          <h3>Coming Soon</h3>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
