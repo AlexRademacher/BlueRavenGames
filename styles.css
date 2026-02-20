@@ -44,12 +44,17 @@ section.topBar nav.topBarTitle {
     border-style: solid;
     border-color: rgb(81, 94, 108);
     margin: 5px 6px;
+    margin-bottom: 1px;
 }
 
 section.topBar nav.topBarTitle:hover {
     background-color: rgb(49, 114, 115);
     color: rgb(33, 36, 37);
     cursor: pointer;
+}
+
+#SmallTitle {
+    margin: 1px; 
 }
 
 section.topBar section {
