@@ -1,4 +1,3 @@
-
 function testTabs(evt, tabNum) {
     var i, tabContent, tabs;
     var alreadyPressed = false;
@@ -25,4 +24,10 @@ function testTabs(evt, tabNum) {
         document.getElementById(tabNum).style.display = "block";
         evt.currentTarget.className += " active";
     }
+}
+
+
+function toTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

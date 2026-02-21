@@ -3,7 +3,7 @@
 My personal website that hold my portfolio and the work I am most proud of
 
 
-Have a main home page that shows a slide show of images of work and my name
+~Have a main home page that shows a slide show of images of work and my name~
 
 Have pages that describe and show more of my games
 
@@ -13,7 +13,7 @@ improve traveling the website by adding the contacts link on the bottom of the a
 
 Be more clear of my role a Game Programmer who is also good at Level Design
 
-ADD MORE OF MY NAME
+~ADD MORE OF MY NAME~
 
 investigate flex boxes instead of div
 
