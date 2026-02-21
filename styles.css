@@ -44,7 +44,7 @@ section.topBar nav.topBarTitle {
     border-style: solid;
     border-color: rgb(81, 94, 108);
     margin: 5px 6px;
-    margin-bottom: 1px;
+
 }
 
 section.topBar nav.topBarTitle:hover {
@@ -53,10 +53,16 @@ section.topBar nav.topBarTitle:hover {
     cursor: pointer;
 }
 
+section.topBar nav.topBarTitle h2 {
+    margin-bottom: 1px;
+    margin-top: 16px;
+}
+
 #SmallTitle {
     margin: 1px; 
     position: relative;
     transform-origin: top;
+    font-size: large;
 }
 
 section.topBar section {
@@ -187,6 +193,43 @@ div.TextBoxMiddle {
     border-color: rgb(79, 196, 199);
 }
 
+div.MainBackground {
+    position: relative;
+    padding: 284px;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: rgb(9, 12, 13);
+    border-top: none;
+    height: min-content;
+    clip: rect(1px, 1px, 1px, 1px);
+    z-index: -1;
+    background-image: url('Images/TheWyrm.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+div.MainPage {
+    position: relative;
+    font-size: x-large;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(108, 119, 132, 0.89);
+    border-radius: 23px;
+    width: fit-content;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+div.MainPage h1 {
+    margin-bottom: 1px;
+    
+}
+
+div.MainPage h4 {
+    margin-top: 1px;
+}
+
 div.Tabs {
     overflow: hidden;
     border: 2px solid;
@@ -227,6 +270,21 @@ div.TabContent {
         height: 200px;
         width: 650px;
     }
+    
+    section.topBar nav.topBarTitle h2 {
+        margin-bottom: 1px;
+        margin-top: 26px;
+    }
+    
+    div.MainBackground {
+        padding: 264px;
+    }
+}
+
+@media only screen and (max-width: 994px){
+    div.MainBackground {
+        padding: 136px;
+    }
 }
 
 @media only screen and (min-width: 625px){
@@ -241,6 +299,11 @@ div.TabContent {
         justify-content: center;
         height: 200px;
         width: 400px;
+    }
+    
+    div.MainPage {
+        width: 270px;
+        margin-left: -36px;
     }
 }
 
