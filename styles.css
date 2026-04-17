@@ -143,6 +143,16 @@ div.TextBoxTitle {
     text-decoration: underline;
 }
 
+div.TextBoxSubTitle {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+    width: max-content;
+    height: 81px;
+    padding: 1px 25px;
+    text-align: center;
+}
+
 div.center {
     display: flex;
     justify-content: center;
@@ -193,6 +203,23 @@ div.TextBoxMiddle {
     border-color: rgb(79, 196, 199);
 }
 
+div.TextBoxMiddle dl {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+}
+div.TextBoxMiddle dl dt {
+    margin-top: 5px;
+}
+
+div.Middle img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
 div.MainBackground {
     position: relative;
     padding: 284px;
@@ -215,10 +242,11 @@ div.MainPage {
     text-align: center;
     background-blend-mode: overlay;
     background-color: rgba(108, 119, 132, 0.89);
-    border-radius: 23px;
+    border-radius: 22px;
+    border-color: rgb(30, 40, 51, 10);
+    border: solid;
     width: fit-content;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 4px;
 }
 
 div.MainPage h1 {
