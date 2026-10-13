@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Blue Raven Games</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+      <header>
+        <section class="topBar">
+          <nav class="topBarTitle">
+            <a href="index.html">
+              <h2>Blue Raven Games</h2>
+              <p id= "SmallTitle"> Alex Rademacher</p>
+            </a>
+          </nav>
+
+          <section>
+            <nav>
+              <a href="page1.html">
+                <h2>Games</h2>
+              </a>
+            </nav>
+            
+            <nav>
+              <a href="page4.html">
+                <h2>Skills</h2>
+              </a>
+            </nav>
+
+            <nav>
+              <a href="page2.html">
+                <h2>About Me</h2>
+              </a>
+            </nav>
+
+            <nav>
+              <a href="page3.html">
+                <h2>Contacts</h2>
+              </a>
+            </nav>
+          </section>
+        </section>
+      </header>
+
+      <section class="MainBody">
+        <section class="ContentBox" style="width: 75%; max-width: 650px;">
+          <div class="BoxTitle">
+            <div class="TextBoxTitle height">
+              <h1 >The Wyrm</h1>
+            </div>
+          </div>
+          
+          <div class="Divider"></div>
+          
+          
+          <div class="center" id="computer">
+            <img src="Images/TheWyrm.png" alt="Strange Tower Logo" style="margin: 15px; max-width: 650px; border: solid; border-radius:  2em;">
+          </div>
+          
+          <div class="VideoShowcase" id="computer2">
+            <iframe title="" Width="515" Height="293" src="https://www.youtube.com/embed/cyEumOn_SLo"></iframe>
+          </div>
+          
+          <div class="ImgBox" Style="justify-content: center" id="phone">
+            <img src="Images/18x24poster.png" class="SmallGameImg" alt="Strange Tower Logo">
+          </div>
+          
+          <div class="VideoShowcase" id="phone2">
+            <iframe title="" Width="224" Height="130" src="https://www.youtube.com/embed/cyEumOn_SLo"></iframe>
+          </div>
+          
+          <div class="TextBox">
+            <h3><a href="https://rong-studio.itch.io/the-wyrm">Download</a> on Itch.io</h3>
+            <h3> Follow Rồng Studio and The Wyrm on: 
+              <br> <a href="https://www.linkedin.com/company/rong-studio/">LinkedIn</a> 
+              <br> <a href="https://www.youtube.com/@TheR%E1%BB%93ngStudio">Youtube</a>
+              <br> <a href="https://x.com/TheRongStudio">Twitter</a> 
+              <br> <a href="https://www.instagram.com/therongstudio/">Instagram</a>
+            </h3>
+          </div>
+          
+          <div class="Divider"></div>
+          
+          <div class="TextBox" style="text-align: left">
+            <h2>What is the Wyrm?</h2>
+            <h3>The Wyrm is a 2.5D stylized stealth adventure thriller game that uncovers the secret of an ancient Vietnamese village. The player must go through 3 days, completing a mission each day while simultaneously following the mystery of the village and its people to save them from the impending doom. <br><br>
+              After the great wyrm split into the various souls that comprised it, you are flung to earth in your human form, awaking in a village with no memory of your past. Now with a deep compulsion to become whole once more, you enter the village determined to uncover your own past and your relationship with the people within it.
+            </h3>
+            <h3>The game is a project that was worked on for over a year and a half within my Capstone class with my team Rồng Studio.</h3>
+          </div>
+          
+          <div class="Divider"></div>
+          
+          <div class="TextBox" style="text-align: left">
+            <h2>What was my position in the development?</h2>
+            
+            <h3>Within the team of 6, I was the Lead Programmer and one of the Level Designers. <br><br>
+              I worked on many different things in this project: <br> Game Mechanics, Enemy AI, UI, Systems, and QA Testing<br><br>
+              The game was developed in Unity 2022, programmed in C#.</h3>
+          </div>
+          
+          <div class="Divider"></div>
+          
+          <div class="TextBox" style="text-align: left">
+            <h2>What did I do?</h2>
+          </div>
+          
+          <div class="CollapsibleShowcase">
+            <button type="button" class="Collapsible" onclick="collapse(this)">Game Mechanics</button>
+            <div class="CollapsibleContent">
+
+              <div class="center">
+                <h2>Grabbing and Dropping Objects</h2>
+              </div>
+
+              <div class="center" style="margin-bottom: 20px;">
+                <img src="Gifs/Wyrm/Mechanics/Clip%203.2%20Finding%20relics2%20(1).gif" style="width: 80%;">
+              </div>
+
+              <div class="center">
+                <img src="Gifs/Wyrm/Mechanics/Place%20relic%20on%20altar%20village.gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>For grabbing objects, I used a raycast that looks for objects with the correct tag. Once found and the correct button is pressed, the object dissappears and is stored in the inventory. <br><br> 
+                  For dropping objects, I have the raycast look for the correct tag once again. The purpose of the tag in this case is to avoid placing objects in the wrong places, possibly losing them. Once the correct tag is found, the button is pressed, and the inventory is searched for the object being placed. When found, the object is removed from the inventory and placed. 
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Dropping Walls for Defense</h2>
+              </div>
+              
+              <div class="center">
+                <img src="Gifs/Wyrm/Mechanics/Recording%202026-04-02%20233800%20(1).gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>The wall is set up so that when the player's raycast hits it, the player can press the button and drop the wall. While the wall is down, it blocks all pathfinding, allowing the player to escape. The wall stays down for 15 seconds before it rises back up automatically. This forces the player to use them more strategically.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Searching Containers</h2>
+              </div>
+
+              <div class="center" style="margin-bottom: 20px;">
+                <img src="Gifs/Wyrm/Mechanics/Clip%203.2%20Finding%20relics2%20(1).gif" style="width: 80%;">
+              </div>
+              
+              <div>
+                <h4>When the Player's raycast hits the object with the correct tag and the button is pressed, the object changes into its opened state. Other objects can also be stored within the opened state, allowing for objects to be stored within them.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Traps</h2>
+              </div>
+              
+              <div class="center" style="margin-bottom: 20px;">
+                <img src="Gifs/Wyrm/Mechanics/Recording%202026-04-02%20231036%20(1).gif" style="width: 80%;">
+              </div>
+              
+              <div class="center">
+                <img src="Gifs/Wyrm/Mechanics/Recording%202026-04-02%20225746%20(1).gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>Once the player walks into the hidden trigger in the room, a trap gets set off. These traps can be multiple different types. The traps also uses spline to follow set paths to be more fluid and unpredictable to hit the player. Once the trap has done its thing, it disappears and can be triggered again later.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+
+            </div>
+            <button type="button" class="Collapsible" onclick="collapse(this)">AI</button>
+            <div class="CollapsibleContent">
+              
+              <div class="center">
+                <h2>Wyrm and Spirit Movement</h2>
+              </div>
+              
+              <div class="center" style="margin-bottom: 20px;">
+                <img src="Gifs/Wyrm/AI/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              
+              <div class="center">
+                <img src="Gifs/Wyrm/AI/Recording%202026-04-02%20205748%20(1).gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>I made 3 different types of movements for the enemies to make each one feel unique. Each one, though, moves differently between the village and the arena to manage the different spaces. <br><br>
+                  - Movement 1 has the enemy move faster the farther away they are from the target. This gives the enemy an intimidating feel at times, while also being easy to dodge. It was used as a starting enemy to introduce the enemies. <br><br>
+                  - Movement 2 keeps a constant speed no matter how far away they are from their target. This allows a challenging AI that might not be intimidating, but is very difficult to escape and dodge.<br><br>
+                  - Movement 3 has them move faster the closer they get to their target. This makes them into a very intimidating and unpredictable enemy that can surprise and overwhelm, but isn't too difficult to dodge.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Targeting</h2>
+              </div>
+              
+              <div class="center">
+                <img src="Gifs/Wyrm/AI/Recording%202026-04-02%20233320%20(1).gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>There are multiple different variables regarding how the AI targets the player:<br><br>
+                  - The Player has a sound collider that the AI looks for, allowing the AI to "hear" the player from afar<br><br>
+                  - The Player's sound collider gets bigger when they run<br><br>
+                  - There are obstacles like walls that the player can throw down to block the pathfinding, forcing the AI to take the long way towards them<br><br>
+                  - If the player is hiding, they are hidden from the navmesh for pathfinding and any colliders of the AIs
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Attack</h2>
+              </div>
+              
+              <div>
+                <h4>The AI attacks by chasing the player. Once the player gets too close and enters the attack radius, the player gets killed.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              
+              
+            </div>
+            <button type="button" class="Collapsible" onclick="collapse(this)">UI</button>
+            <div class="CollapsibleContent">
+              
+              <div class="center">
+                <h2>Menus</h2>
+              </div>
+              
+              <!--
+              <div class="center">
+                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              -->
+
+              <div>
+                <h4>The menus I made and worked on are: <br><br>
+                  - The Main Menu with Play and Quit buttons<br><br>
+                  - The Pause Menu with Continue, Unstuck, and Main Menu buttons<br><br>
+                  - The Respawn Menu with Respawn and Main Menu buttons and a small tips area that randomly selects from a list of tips to help the player<br><br>
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Cutscenes</h2>
+              </div>
+              
+              <!--
+              <div class="center">
+                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              -->
+
+              <div>
+                <h4>There is a cutscene UI that plays specific cutscenes after a certain action has been done or a button has been pressed. The cutscene will automatically play until it's finished. You are also able to skip all cutscenes incase you don't want to sit through the whole thing.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Loading Screens</h2>
+              </div>
+              
+              <!--
+              <div class="center">
+                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              -->
+
+              <div>
+                <h4>Loading screens have been put in to give the player something to look at while waiting for something taking a while to load, like loading a new scene. <br><br>
+                The loading scenes pick a background out of a list of art we used for concepts or features, giving the player something to look at while waiting.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Credits</h2>
+              </div>
+              
+              <!--
+              <div class="center">
+                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              -->
+
+              <div>
+                <h4>Once reaching the credits, they will scroll up automatically. The text is positioned so that it rises and timed so that it pauses on moments like the logo and "Thanks for playing”. Once this finishes, the player is sent to the main menu, but can also skip if they don't want to see the whole thing.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+            </div>
+            <button type="button" class="Collapsible" onclick="collapse(this)">Systems</button>
+            <div class="CollapsibleContent">
+              
+              <div class="center">
+                <h2>Respawn</h2>
+              </div>
+              
+              <!--
+              <div class="center">
+                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+              </div>
+              -->
+
+              <div>
+                <h4>When respawning, the group decided to give the player 3 lives. Until they reach their final life, respawning only warps them back to spawn, keeping the progress they've made. Once the final life is lost, the level resets completely.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Progression</h2>
+              </div>
+
+              <div>
+                <h4>We have the progression monitored during the gameplay, noting how many key objects are picked up, what level they are on, and what enemy is after them.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Tutorial</h2>
+              </div>
+              
+              <div class="center">
+                <img src="Gifs/Wyrm/Systems/Tutorial%20cabinet.gif" style="width: 80%;">
+              </div>
+
+              <div>
+                <h4>The tutorial is put together to look for specific actions to happen. Once an action is performed, the player moves on to the next part of the tutorial. The player is also locked into the tutorial area until they complete it.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+              
+              <div class="center">
+                <h2>Save Data</h2>
+              </div>
+
+              <div>
+                <h4>We have data saved for moving across each scene, such as the inventory and lives.
+                </h4>
+              </div>
+              
+              <div class="Divider"></div>
+            </div>
+          </div>
+          
+          <div class="Divider" style="margin-top: 30px;"></div>
+          
+          <div class="TextBox">
+            <h3><a href="page4.html">Want to learn more about my Skills?</a></h3>
+          </div>
+          
+          <!--
+          <div class="center">
+            <div class="TextBoxTitle">
+              <h1>The Wyrm</h1>
+            </div>
+          </div>
+
+          <div class="center">
+            <img src="Images/TheWyrm.png" alt="Strange Tower Logo" style="margin: 15px; width: 100%; max-width: 650px;">
+          </div>
+
+          <div class="TextBoxMiddle">
+            <h3> Follow Rồng Studio and Development on: 
+              <br> <a href="https://www.linkedin.com/company/rong-studio/">LinkedIn</a> 
+              <br> <a href="https://www.youtube.com/@TheR%E1%BB%93ngStudio">Youtube</a>
+              <br> <a href="https://x.com/TheRongStudio">Twitter</a> 
+              <br> <a href="https://www.instagram.com/therongstudio/">Instagram</a></h3>
+          </div>
+
+          <div class="center">
+            <div class="TextBoxSubTitle">
+              <h2>What is the Wyrm?</h2>
+            </div>
+          </div>
+
+          <div class="TextBoxMiddle">
+             <h3>A First-Person exploration thriller game based in Vietnamese folklore.</h3>
+            <h3>The game is a project that has been worked on for over a year and is still currently in development in my Capstone class with my team Rồng Studio.</h3>
+          </div>
+
+          <div class="center">
+            <div class="TextBoxSubTitle">
+              <h2>What did I do?</h2>
+            </div>
+          </div>
+
+          <div class="TextBoxMiddle">
+            <h3>Within the team of 6, I am the Lead Programmer and one of the Level Designer.</h3>
+            <h3> I have worked on the many things in this project such as: <br> Game Mechanics, Enemy AI, UI, Tech Art, Systems Behind the Scenes, Level Design, and QA Testing </h3>
+            <dl>
+              <dt><b>Game Mechanics:</b></dt> <dd>Grabbing and Dropping Objects, Dropping Walls for Defense, and Searching Containers </dd>
+              <dt><b>Enemy AI:</b></dt> <dd>Wyrm and Spirit Movement, Sight, Attack, and Final Arena Traps</dd>
+              <dt><b>UI:</b></dt> <dd> Menus, Cutscenes, Loading Screens, and Credits</dd>
+              <dt><b>Tech Art:</b></dt> <dd> Cutscenes, Integration of Models, Particles, and Lighting</dd>
+              <dt><b>Systems:</b></dt> <dd> Respawn, Progression, Tutorial, and Save Data </dd>
+              <dt><b>Level Design:</b></dt> <dd> Coming Up with the Final Design of the Village, Arena Parkour, Helped Improve Continuity Through the Story, and Improved Natural Placement of Furniture and Other Objects in the Game</dd>
+              <dt><b>QA Testing:</b></dt> <dd> Running Inperson and Online Play Testing</dd>
+            </dl>
+            <h3>The game is being developed in Unity 2022, being programmed in C#.</h3>
+          </div>
+
+          <div class="center">
+            <div class="TextBoxSubTitle">
+              <h2>Want to go More Indepth of my Skills?</h2>
+            </div>
+          </div>
+
+          <div class="TextBoxMiddle">
+            <h3><br> <a href="page4_1.html">Programming</a></h3>
+              <h3><a href="page4_2.html">Level Design</a></h3>
+              <h3><a href="page4_3.html">QA Testing</a></h3>
+          </div>
+          -->
+        </section>
+      </section>
+      
+      
+
+      <footer>
+        <div class="bottomBar">
+        <div class="left">
+          <a href="page2.html">
+            <h2>About Me</h2>
+          </a>
+
+          <a href="page3.html">
+            <h2>Contacts</h2>
+          </a>
+        </div>
+        
+        <div class="bottomleft">
+          <h4><br>Website by Alex Rademacher</h4>
+        </div>
+        
+        <div class="right">
+          <button class="right" onclick="toTop()" id="topButton" title="Go to the top of the page!">^</button>
+        </div>
+      </div>
+      </footer>
+    </body>
+</html>
