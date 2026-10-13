@@ -6,8 +6,16 @@ const events = ["pageshow", "load", "DOMContentLoaded"];
 const eventLogger = (event) => {
     switch(event.type) {
         case "DOMContentLoaded":
+            if (mobileCheck()){
+                const collection1 = document.getElementById("computer");
+                collection1.style.display = "none";
+                const collection3 = document.getElementById("phone");
+                collection3.style.display = "block";
+            }
+            
             var slides = document.getElementsByClassName("SlideContent");
-            slides[n].style.display = "block";
+            if (slides[n] != null)
+                slides[n].style.display = "block";
             
             slideshowTimer = setTimeout(slideshow, 10000);
             break;
@@ -132,3 +140,12 @@ function ssBackButton() {
     slideshowBack();
     slideshowTimer = setTimeout(slideshow, 30000);
 }
+
+function mobileCheck() {
+    if(typeof window.orientation !== "undefined"){
+        return true;
+    }
+    else
+        return false;
+}
+

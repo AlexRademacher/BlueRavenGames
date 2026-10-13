@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Blue Raven Games</title>
+        <title>Alex Rademacher's Portfolio Website</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
     </head>
     
     <body>
+      <div id="computer">
         <header>
           <section class="topBar">
             <nav class="topBarTitle">
@@ -45,203 +46,208 @@
           </section>
         </header>
         
-      <section class="MainBody">
-        <section class="ContentBox" style="width: 75%; max-width: 650px;">
-          <div class="BoxTitle">
-            <div class="TextBoxTitle height" >
-              <h1>Strange Tower</h1>
+        <section class="MainBody">
+          <section class="ContentBox" style="width: 75%; max-width: 650px;">
+            <div class="BoxTitle">
+              <div class="TextBoxTitle height" >
+                <h1>Strange Tower</h1>
+              </div>
             </div>
-          </div>
-          
-          <div class="Divider"></div>
-          
-          <div class="center" id="computer">
-            <img src="Images/StrangeTower.png" alt="Strange Tower Logo" style="margin: 15px; max-width: 650px; border: solid; border-radius:  2em;">
-          </div>
-          
-          <div class="VideoShowcase" id="computer2">
-            <iframe title="" Width="515" Height="293" src="https://www.youtube.com/embed/6C7QLYI0Ge4"></iframe>
-          </div>
 
-          <div class="center" id="phone">
-            <img src="Images/Screenshot%202026-10-01%20175445.png" alt="Strange Tower Logo" style="width: 275px; border: solid; border-radius: 2em;">
-          </div>
-          
-          <div class="VideoShowcase" id="phone2">
-            <iframe title="" Width="224" Height="130" src="https://www.youtube.com/embed/6C7QLYI0Ge4"></iframe>
-          </div>
-          
-          <div class="TextBox">
-            <h3> <a href="https://extremelyevilproductions.itch.io/strange-tower">Download</a> on Itch.io </h3>
-            <h3> <a href="https://www.youtube.com/@ExtremelyEvilProductions">Channel</a> on Youtube </h3>
-          </div>
-          
-          <div class="Divider"></div>
-          
-          <div class="TextBox" style="text-align: left">
-            <h2>What is Strange Tower?</h2>
-            <h3>One Tower. <br><br>
+            <div class="Divider"></div>
 
-              Three Gems. <br><br>
+            <div id="computer1" style="justify-items: center;">
+              <div class="center">
+                <img src="Images/StrangeTower.png" alt="Strange Tower Logo" style="margin: 15px; max-width: 650px; border: solid; border-radius:  2em;">
+              </div>
 
-              Three... Dimensions?<br><br>
-
-              This is the official demo for our game, Strange Tower! The seventh in line for the throne of the realm, you initially sought out three mystical gems to gain favor with your ailing grandfather, King Rametes. However, before the gems could be presented to him they attached to your crown and fed off of your ambition for power. Reaching across space and time, the gems have found new realms for you to conquer- all confined within your very own, very Strange Tower. <br><br>
-
-              Hack and slash your way through enemies in this dimension-travelling beat-em-up, fighting your way to end the source of the corruption that has taken over your home.</h3>
-            <h3>A project developed in my Indie Game Development class within a span of 2-3 months with my team of 5.</h3>
-          </div>
-          
-          <div class="Divider"></div>
-          
-          <div class="TextBox" style="text-align: left">
-            <h2>What was my position in the development?</h2>
+              <div class="VideoShowcase">
+                <iframe title="" Width="515" Height="293" src="https://www.youtube.com/embed/6C7QLYI0Ge4"></iframe>
+              </div>
+            </div>
             
-            <h3>As one of the two programmers in the group I was the main programmer focusing on Game Mechanics, Physics, UI, Systems, and QA Testing.<br><br>
-              The game was developed in Unity 2023, programmed in C#.</h3>
-          </div>
-          
-          <div class="Divider"></div>
-          
-          <div class="TextBox" style="text-align: left">
-            <h2>What did I do?</h2>
+            <div id="computer2" style="justify-items: center;">
+              <div class="center">
+                <img src="Images/Screenshot%202026-10-01%20175445.png" alt="Strange Tower Logo" style="width: 275px; border: solid; border-radius: 2em;">
+              </div>
+
+              <div class="VideoShowcase">
+                <iframe title="" Width="224" Height="130" src="https://www.youtube.com/embed/6C7QLYI0Ge4"></iframe>
+              </div>
+            </div>
             
-            <h3>As one of the two programmers in the group I focused on Game Mechanics, Physics, UI, Tech Art, Systems, and QA Testing.</h3>
-          </div>
-          
-          <div class="CollapsibleShowcase">
-            <button type="button" class="Collapsible" onclick="collapse(this)">Game Mechanics</button>
-            <div class="CollapsibleContent">
-              
-              <div class="center">
-                <h2>Weapons</h2>
-              </div>
-              
-              <div class="center">
-                <img src="Gifs/STower/Mechanics/2025-01-30%2012-43-13.gif" style="width: 80%;">
-              </div>
 
-              <div>
-                <h4>The video above shows the demo setup, not the final placement of weapons during gameplay.<br><br>
-                  There are 3 different types of weapons within the game, each being unlocked throughout each level.<br><br>
-                - The Sword is an object that plays a swinging motion to mimic swinging it to attack, but attacks using the crosshair and distance.<br><br>
-                - The Gun shoots out a projectile from the barrel of the gun towards the location of the crosshair. This allows you to aim, while adding some difficulty. When the bullet's collider hits the enemy, it damages them.<br><br>
-                - The Bomb is an object that is thrown with momentum. The longer the button is held down, the more the crosshair meter will fill up. The more filled up the meter is, the further the bomb will be thrown. The bomb is also timed to blow up, so you have to work with it. It damages enemies with the explosion’s collider. <br><br>
-                - The inventory order for sorting through each weapon is set by picking each of them up. Each weapon is gained when you pick them up at the start of each level.<br><br>
-                
-                (There also may be a secret easter egg weapon of a gun that shoots bombs instead of bullets)
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
+            <div class="TextBox">
+              <h3> <a href="https://extremelyevilproductions.itch.io/strange-tower">Download</a> on Itch.io </h3>
+              <h3> <a href="https://www.youtube.com/@ExtremelyEvilProductions">Channel</a> on Youtube </h3>
             </div>
-            <button type="button" class="Collapsible" onclick="collapse(this)">Physics</button>
-            <div class="CollapsibleContent">
-              
-              <div class="center">
-                <h2>Player Movement</h2>
-              </div>
-              
-              <!--
-              <div class="center">
-                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
-              </div>
-              -->
 
-              <div>
-                <h4>The player movement was a simple set up of walking, running, and jumping.
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
+            <div class="Divider"></div>
+
+            <div class="TextBox" style="text-align: left">
+              <h2>What is Strange Tower?</h2>
+              <h3>One Tower. <br><br>
+
+                Three Gems. <br><br>
+
+                Three... Dimensions?<br><br>
+
+                This is the official demo for our game, Strange Tower! The seventh in line for the throne of the realm, you initially sought out three mystical gems to gain favor with your ailing grandfather, King Rametes. However, before the gems could be presented to him they attached to your crown and fed off of your ambition for power. Reaching across space and time, the gems have found new realms for you to conquer- all confined within your very own, very Strange Tower. <br><br>
+
+                Hack and slash your way through enemies in this dimension-travelling beat-em-up, fighting your way to end the source of the corruption that has taken over your home.</h3>
+              <h3>A project developed in my Indie Game Development class within a span of 2-3 months with my team of 5.</h3>
             </div>
-            <button type="button" class="Collapsible" onclick="collapse(this)">UI</button>
-            <div class="CollapsibleContent">
-              
-              <div class="center">
-                <h2>Menus</h2>
-              </div>
-              
-              <div class="center">
-                <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
-              </div>
 
-              <div>
-                <h4>The Menus in the game consist of:<br><br>
-                  - The Main Menu with a Play, Controls, and Quit button. <br><br>
-                  - The Controls menu shows the controls and has a Back button to the Main Menu. The controls also show after the cutscene the first time the player plays the game.<br><br>
-                  - The Difficulty menu that shows before playing, which has buttons and explanations for each mode.<br><br>
-                  - The Pause menu with a Continue and Quit button.<br><br>
-                  - The Respawn menu with a Respawn and Main Menu button.
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
-              
-              <div class="center">
-                <h2>Cutscenes</h2>
-              </div>
-              
-              <!--
-              <div class="center">
-                <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
-              </div>
-              -->
+            <div class="Divider"></div>
 
-              <div>
-                <h4>There is a cutscene UI that plays a cutscene after starting the game. The cutscene will automatically play until it's finished. You are also able to skip all cutscenes incase you don't want to sit through the whole thing.
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
+            <div class="TextBox" style="text-align: left">
+              <h2>What was my position in the development?</h2>
+
+              <h3>As one of the two programmers in the group I was the main programmer focusing on Game Mechanics, Physics, UI, Systems, and QA Testing.<br><br>
+                The game was developed in Unity 2023, programmed in C#.</h3>
             </div>
-            <button type="button" class="Collapsible" onclick="collapse(this)">Systems</button>
-            <div class="CollapsibleContent">
-              
-              <div class="center">
-                <h2>Respawn</h2>
-              </div>
-              
-              <!--
-              <div class="center">
-                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
-              </div>
-              -->
 
-              <div>
-                <h4> Once you die, the level you are at resets, making you have to restart the level you are on.
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
-              
-              <div class="center">
-                <h2>Progression</h2>
-              </div>
-              
-              <!--
-              <div class="center">
-                <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
-              </div>
-              -->
+            <div class="Divider"></div>
 
-              <div>
-                <h4> To progress, you have to kill every enemy on the level. After killing an enemy, the game checks if the enemies still exist within the level. Once all enemies have been killed, an animation plays opening the door forward.
-                </h4>
-              </div>
-              
-              <div class="Divider"></div>
+            <div class="TextBox" style="text-align: left">
+              <h2>What did I do?</h2>
+
+              <h3>As one of the two programmers in the group I focused on Game Mechanics, Physics, UI, Tech Art, Systems, and QA Testing.</h3>
             </div>
-          </div>
-          
-          <div class="Divider"></div>
-          
-          <div class="TextBox">
-            <h3><a href="page4.html">Want to learn more about my Skills?</a></h3>
-          </div>
 
+            <div class="CollapsibleShowcase">
+              <button type="button" class="Collapsible" onclick="collapse(this)">Game Mechanics</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Weapons</h2>
+                </div>
+
+                <div class="center">
+                  <img src="Gifs/STower/Mechanics/2025-01-30%2012-43-13.gif" style="width: 80%;">
+                </div>
+
+                <div>
+                  <h4>The video above shows the demo setup, not the final placement of weapons during gameplay.<br><br>
+                    There are 3 different types of weapons within the game, each being unlocked throughout each level.<br><br>
+                  - The Sword is an object that plays a swinging motion to mimic swinging it to attack, but attacks using the crosshair and distance.<br><br>
+                  - The Gun shoots out a projectile from the barrel of the gun towards the location of the crosshair. This allows you to aim, while adding some difficulty. When the bullet's collider hits the enemy, it damages them.<br><br>
+                  - The Bomb is an object that is thrown with momentum. The longer the button is held down, the more the crosshair meter will fill up. The more filled up the meter is, the further the bomb will be thrown. The bomb is also timed to blow up, so you have to work with it. It damages enemies with the explosion’s collider. <br><br>
+                  - The inventory order for sorting through each weapon is set by picking each of them up. Each weapon is gained when you pick them up at the start of each level.<br><br>
+
+                  (There also may be a secret easter egg weapon of a gun that shoots bombs instead of bullets)
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">Physics</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Player Movement</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4>The player movement was a simple set up of walking, running, and jumping.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">UI</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Menus</h2>
+                </div>
+
+                <div class="center">
+                  <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
+                </div>
+
+                <div>
+                  <h4>The Menus in the game consist of:<br><br>
+                    - The Main Menu with a Play, Controls, and Quit button. <br><br>
+                    - The Controls menu shows the controls and has a Back button to the Main Menu. The controls also show after the cutscene the first time the player plays the game.<br><br>
+                    - The Difficulty menu that shows before playing, which has buttons and explanations for each mode.<br><br>
+                    - The Pause menu with a Continue and Quit button.<br><br>
+                    - The Respawn menu with a Respawn and Main Menu button.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+
+                <div class="center">
+                  <h2>Cutscenes</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4>There is a cutscene UI that plays a cutscene after starting the game. The cutscene will automatically play until it's finished. You are also able to skip all cutscenes incase you don't want to sit through the whole thing.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">Systems</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Respawn</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4> Once you die, the level you are at resets, making you have to restart the level you are on.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+
+                <div class="center">
+                  <h2>Progression</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4> To progress, you have to kill every enemy on the level. After killing an enemy, the game checks if the enemies still exist within the level. Once all enemies have been killed, an animation plays opening the door forward.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div class="TextBox">
+              <h3><a href="page4.html">Want to learn more about my Skills?</a></h3>
+            </div>
+
+          </section>
         </section>
-      </section>
           
         <footer>
           <div class="bottomBar">
@@ -264,5 +270,263 @@
         </div>
       </div>
         </footer>
+      </div>
+      
+      <div id="phone">
+      <header>
+        <section class="topBar">
+          <nav class="topBarTitle" style="font-size: 60px; padding: 31px; padding-bottom: 42px; margin-top: 25px;">
+            <a href="index.html">
+              <h2>Alex Rademacher</h2>
+            </a>
+          </nav>
+
+          <section style="height: fit-content; width: fit-content; margin: 25px; justify-content: center;">
+            <nav>
+              <a href="page1.html" style="font-size: 40px; margin: 10px 20px; border-width: 10px;">
+                <h2>Games</h2>
+              </a>
+            </nav>
+
+            <nav>
+              <a href="page4.html" style="font-size: 40px; margin: 10px 20px; border-width: 10px;">
+                <h2>Skills</h2>
+              </a>
+            </nav>
+
+            <nav>
+              <a href="page2.html" style="font-size: 40px; margin: 10px 15px; border-width: 10px;">
+                <h2>About Me</h2>
+              </a>
+            </nav>
+
+            <nav>
+              <a href="page3.html" style="font-size: 40px; margin: 10px 15px; border-width: 10px;">
+                <h2>Contacts</h2>
+              </a>
+            </nav>
+          </section>
+        </section>
+        <!--<p>gggggg</p>-->
+      </header>
+      
+      <div class="Divider" style="width: 101.5%; border-bottom: solid; border-color: rgb(18, 128, 162);"></div>
+      
+      <section class="MainBody">
+          <section class="ContentBox" style="width: 75%; max-width: 650px;">
+            <div class="BoxTitle">
+              <div class="TextBoxTitle height" >
+                <h1>Strange Tower</h1>
+              </div>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div style="justify-items: center;">
+              <div class="center">
+                <img src="Images/Screenshot%202026-10-01%20175445.png" alt="Strange Tower Logo" style="width: 275px; border: solid; border-radius: 2em;">
+              </div>
+
+              <div class="VideoShowcase">
+                <iframe title="" Width="515" Height="293" src="https://www.youtube.com/embed/6C7QLYI0Ge4"></iframe>
+              </div>
+            </div>
+
+            <div class="TextBox">
+              <h3> <a href="https://extremelyevilproductions.itch.io/strange-tower">Download</a> on Itch.io </h3>
+              <h3> <a href="https://www.youtube.com/@ExtremelyEvilProductions">Channel</a> on Youtube </h3>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div class="TextBox" style="text-align: left">
+              <h2>What is Strange Tower?</h2>
+              <h3>One Tower. <br><br>
+
+                Three Gems. <br><br>
+
+                Three... Dimensions?<br><br>
+
+                This is the official demo for our game, Strange Tower! The seventh in line for the throne of the realm, you initially sought out three mystical gems to gain favor with your ailing grandfather, King Rametes. However, before the gems could be presented to him they attached to your crown and fed off of your ambition for power. Reaching across space and time, the gems have found new realms for you to conquer- all confined within your very own, very Strange Tower. <br><br>
+
+                Hack and slash your way through enemies in this dimension-travelling beat-em-up, fighting your way to end the source of the corruption that has taken over your home.</h3>
+              <h3>A project developed in my Indie Game Development class within a span of 2-3 months with my team of 5.</h3>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div class="TextBox" style="text-align: left">
+              <h2>What was my position in the development?</h2>
+
+              <h3>As one of the two programmers in the group I was the main programmer focusing on Game Mechanics, Physics, UI, Systems, and QA Testing.<br><br>
+                The game was developed in Unity 2023, programmed in C#.</h3>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div class="TextBox" style="text-align: left">
+              <h2>What did I do?</h2>
+
+              <h3>As one of the two programmers in the group I focused on Game Mechanics, Physics, UI, Tech Art, Systems, and QA Testing.</h3>
+            </div>
+
+            <div class="CollapsibleShowcase">
+              <button type="button" class="Collapsible" onclick="collapse(this)">Game Mechanics</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Weapons</h2>
+                </div>
+
+                <div class="center">
+                  <img src="Gifs/STower/Mechanics/2025-01-30%2012-43-13.gif" style="width: 80%;">
+                </div>
+
+                <div>
+                  <h4>The video above shows the demo setup, not the final placement of weapons during gameplay.<br><br>
+                    There are 3 different types of weapons within the game, each being unlocked throughout each level.<br><br>
+                  - The Sword is an object that plays a swinging motion to mimic swinging it to attack, but attacks using the crosshair and distance.<br><br>
+                  - The Gun shoots out a projectile from the barrel of the gun towards the location of the crosshair. This allows you to aim, while adding some difficulty. When the bullet's collider hits the enemy, it damages them.<br><br>
+                  - The Bomb is an object that is thrown with momentum. The longer the button is held down, the more the crosshair meter will fill up. The more filled up the meter is, the further the bomb will be thrown. The bomb is also timed to blow up, so you have to work with it. It damages enemies with the explosion’s collider. <br><br>
+                  - The inventory order for sorting through each weapon is set by picking each of them up. Each weapon is gained when you pick them up at the start of each level.<br><br>
+
+                  (There also may be a secret easter egg weapon of a gun that shoots bombs instead of bullets)
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">Physics</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Player Movement</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4>The player movement was a simple set up of walking, running, and jumping.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">UI</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Menus</h2>
+                </div>
+
+                <div class="center">
+                  <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
+                </div>
+
+                <div>
+                  <h4>The Menus in the game consist of:<br><br>
+                    - The Main Menu with a Play, Controls, and Quit button. <br><br>
+                    - The Controls menu shows the controls and has a Back button to the Main Menu. The controls also show after the cutscene the first time the player plays the game.<br><br>
+                    - The Difficulty menu that shows before playing, which has buttons and explanations for each mode.<br><br>
+                    - The Pause menu with a Continue and Quit button.<br><br>
+                    - The Respawn menu with a Respawn and Main Menu button.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+
+                <div class="center">
+                  <h2>Cutscenes</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/STower/UI/2025-01-30%2012-29-11.gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4>There is a cutscene UI that plays a cutscene after starting the game. The cutscene will automatically play until it's finished. You are also able to skip all cutscenes incase you don't want to sit through the whole thing.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+              <button type="button" class="Collapsible" onclick="collapse(this)">Systems</button>
+              <div class="CollapsibleContent">
+
+                <div class="center">
+                  <h2>Respawn</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4> Once you die, the level you are at resets, making you have to restart the level you are on.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+
+                <div class="center">
+                  <h2>Progression</h2>
+                </div>
+
+                <!--
+                <div class="center">
+                  <img src="Gifs/Recording%202026-04-02%20204924%20(1).gif" style="width: 80%;">
+                </div>
+                -->
+
+                <div>
+                  <h4> To progress, you have to kill every enemy on the level. After killing an enemy, the game checks if the enemies still exist within the level. Once all enemies have been killed, an animation plays opening the door forward.
+                  </h4>
+                </div>
+
+                <div class="Divider"></div>
+              </div>
+            </div>
+
+            <div class="Divider"></div>
+
+            <div class="TextBox">
+              <h3><a href="page4.html">Want to learn more about my Skills?</a></h3>
+            </div>
+
+          </section>
+        </section>
+        
+      <footer style="height: fit-content;">
+        <div class="bottomBar" style="height: fit-content;">
+
+          <div class="left" style="height: fit-content;">
+            <a href="page2.html" style="font-size: 35px; height: fit-content;">
+              <h2>About Me</h2>
+            </a>
+
+            <a href="page3.html" style="font-size: 35px; height: fit-content;">
+              <h2>Contacts</h2>
+            </a>
+          </div>
+
+          <div class="bottomleft" style="font-size: 33px; margin-top: 33px;">
+            <h4><br>Website by Alex Rademacher</h4>
+          </div>
+
+          <div class="right">
+            <button class="right" onclick="toTop()" id="topButton2" title="Go to the top of the page!" style="font-size: 55px; width: fit-content; height: 98px; margin-top: 20px;">^</button>
+          </div>
+
+        </div>
+      </footer>
+    </div>
     </body>
 </html>
