@@ -13,11 +13,37 @@ const eventLogger = (event) => {
                 collection3.style.display = "block";
             }
             
-            var slides = document.getElementsByClassName("SlideContent");
+            var slides;
+    
+            if (mobileCheck())
+                slides = document.getElementsByClassName("SlideContentP");
+            else
+                slides = document.getElementsByClassName("SlideContentC");
+            
             if (slides[n] != null)
                 slides[n].style.display = "block";
             
             slideshowTimer = setTimeout(slideshow, 10000);
+            break;
+        case "change":
+            //if (ScreenOrientation.type != undefined){
+            //    alert(ScreenOrientation.angle.toString);
+            //    if (ScreenOrientation.type != "portrait-primary") {
+            //        alert("flap");
+            //    } 
+            //    if (ScreenOrientation.type == "landscape-primary") {
+            //        alert("flat");
+            //    }
+            //    if (ScreenOrientation.type == "portrait-secondary") {
+            //        alert("flit");
+            //    }
+            //    if (ScreenOrientation.type == "landscape-secondary") {
+            //        alert("flut");
+            //    }
+            //}
+            //else
+            //    alert("missing ScreenOrientation type");
+            
             break;
         default:
             break;
@@ -25,6 +51,7 @@ const eventLogger = (event) => {
 };
 
 events.forEach((eventName) => window.addEventListener(eventName, eventLogger));
+screen.orientation.addEventListener("change", eventLogger);
 
 
 
@@ -91,7 +118,12 @@ function slideshow() {
 }
 
 function slideshowProgress() { 
-    var slides = document.getElementsByClassName("SlideContent");
+    var slides;
+    
+    if (mobileCheck())
+        slides = document.getElementsByClassName("SlideContentP");
+    else
+        slides = document.getElementsByClassName("SlideContentC");
     
     if (n >= slides.length - 1)
             n = 0;
@@ -110,8 +142,12 @@ function slideshowProgress() {
 }
 
 function slideshowBack() {
+    var slides;
     
-    var slides = document.getElementsByClassName("SlideContent");
+    if (mobileCheck())
+        slides = document.getElementsByClassName("SlideContentP");
+    else
+        slides = document.getElementsByClassName("SlideContentC");
 
     if (n <= 0)
             n = slides.length - 1;

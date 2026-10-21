@@ -32,6 +32,10 @@
 }
 
 #computer1 {
+    display: block;
+}
+
+#computer1c {
     display: flex;
 }
 
@@ -85,7 +89,6 @@ section.topBar nav.topBarTitle {
     border-style: solid;
     border-color: rgb(81, 94, 108);
     margin: 4px 6px;
-    text
 }
 
 section.topBar nav.topBarTitle:hover {
@@ -215,12 +218,13 @@ a.mainGameImg {
 }
 
 div.MainGameShowcase {
-    display: -webkit-box; 
+    display: flex; 
     background-color: rgb(81, 94, 108); 
     border: double; 
     border-radius: 1em;
     border-color: rgb(18, 128, 162);
     margin-bottom: 17px;
+    width: 630px
 }
 
 img.BigGameImg {
@@ -252,12 +256,22 @@ div.overlay {
     background-size: 515px 403px;
 }
 
+#Game1p {
+    background-image: url('Images/StrangeTower.png');
+    background-size: 515px 403px;
+}
+
 #Game1c {
     background-image: url('Images/StrangeTower.png');
     background-size: 515px 403px;
 }
 
 #Game2 {
+    background-image: url('Images/18x24Poster.png');
+    background-size: cover;
+}
+
+#Game2p {
     background-image: url('Images/18x24Poster.png');
     background-size: cover;
 }
@@ -545,12 +559,22 @@ div.CollapsibleContent {
     max-width: 650px;
 }
 
-div.SlideContent {
+div.SlideContentC {
     opacity: 100%;
     max-width: 650px;
     display: none;
     animation-name: myAnimation;
     animation-duration: .5s;
+}
+
+div.SlideContentP {
+    opacity: 100%;
+    max-width: 650px;
+    display: none;
+    animation-name: myAnimation;
+    animation-duration: .5s;
+    justify-self: center;
+    margin: 0px 0px;
 }
 
 @keyframes myAnimation {
@@ -796,6 +820,10 @@ div.bottomleft {
     }
     
     #computer1 {
+        display: none;
+    }
+    
+    #computer1c {
         display: none;
     }
     
