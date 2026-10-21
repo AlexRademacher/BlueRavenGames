@@ -26,23 +26,23 @@ const eventLogger = (event) => {
             slideshowTimer = setTimeout(slideshow, 10000);
             break;
         case "change":
-            //if (ScreenOrientation.type != undefined){
-            //    alert(ScreenOrientation.angle.toString);
-            //    if (ScreenOrientation.type != "portrait-primary") {
-            //        alert("flap");
-            //    } 
-            //    if (ScreenOrientation.type == "landscape-primary") {
-            //        alert("flat");
-            //    }
-            //    if (ScreenOrientation.type == "portrait-secondary") {
-            //        alert("flit");
-            //    }
-            //    if (ScreenOrientation.type == "landscape-secondary") {
-            //        alert("flut");
-            //    }
-            //}
-            //else
-            //    alert("missing ScreenOrientation type");
+            if (ScreenOrientation.type != undefined){
+                alert(ScreenOrientation.angle.toString);
+                if (ScreenOrientation.type != "portrait-primary") {
+                    alert("flap");
+                } 
+                if (ScreenOrientation.type == "landscape-primary") {
+                    alert("flat");
+                }
+                if (ScreenOrientation.type == "portrait-secondary") {
+                    alert("flit");
+                }
+                if (ScreenOrientation.type == "landscape-secondary") {
+                    alert("flut");
+                }
+            }
+            else
+                alert("missing ScreenOrientation type");
             
             break;
         default:
