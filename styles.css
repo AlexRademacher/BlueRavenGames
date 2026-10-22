@@ -660,7 +660,7 @@ div.right {
 div.left {
     display: flex;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: fit-content;
 }
 
@@ -668,10 +668,11 @@ div.bottomleft {
     display: flex;
     align-content: center;
     justify-content: flex-start;
-    left: 8px;
+    left: 10px;
     position: absolute;
     color: #807d7d;
-    height: 1px;
+    height: 4px;
+    te
 }
 /*-----------------------------------------------------------------------------------------------*/
 

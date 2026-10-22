@@ -26,23 +26,23 @@ const eventLogger = (event) => {
             slideshowTimer = setTimeout(slideshow, 10000);
             break;
         case "change":
-            if (ScreenOrientation.type != undefined){
-                alert(ScreenOrientation.angle.toString);
-                if (ScreenOrientation.type != "portrait-primary") {
-                    alert("flap");
-                } 
-                if (ScreenOrientation.type == "landscape-primary") {
-                    alert("flat");
-                }
-                if (ScreenOrientation.type == "portrait-secondary") {
-                    alert("flit");
-                }
-                if (ScreenOrientation.type == "landscape-secondary") {
-                    alert("flut");
-                }
-            }
-            else
-                alert("missing ScreenOrientation type");
+            //if (ScreenOrientation.type != undefined){
+            //    alert(ScreenOrientation.angle.toString);
+            //    if (ScreenOrientation.type != "portrait-primary") {
+            //        alert("flap");
+            //    } 
+            //    if (ScreenOrientation.type == "landscape-primary") {
+            //        alert("flat");
+            //    }
+            //    if (ScreenOrientation.type == "portrait-secondary") {
+            //        alert("flit");
+            //    }
+            //    if (ScreenOrientation.type == "landscape-secondary") {
+            //        alert("flut");
+            //    }
+            //}
+            //else
+            //    alert("missing ScreenOrientation type");
             
             break;
         default:
@@ -89,7 +89,7 @@ function overlayOn(x) {
     const element = collection.getElementsByTagName("div");
     element[0].style.display = "block";
     //document.getElementsByClassName("overlay").style.display = "block";
-    console.log(5 + 6);
+    //console.log(5 + 6);
 }
 
 function overlayOff(x) {
