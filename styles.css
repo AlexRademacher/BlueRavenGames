@@ -10,8 +10,13 @@
 }
 
 @font-face {
+    font-family: mySubTitle;
+    src: url(Fonts/ValleySans-Regular.ttf);
+}
+
+@font-face {
     font-family: myText;
-    src: url(Fonts/ValleySans-VariableFont_wght.ttf);
+    src: url(Fonts/ValleySans-Light.ttf);
 }
 
 
@@ -107,7 +112,7 @@ section.topBar nav.topBarTitle h2 {
     position: relative;
     transform-origin: top;
     font-size: large;
-    font-family: myText;
+    font-family: mySubTitle;
 }
 
 section.topBar section {
@@ -380,11 +385,51 @@ div.TextBox {
 }
 
 div.TextBox h2 {
+    font-family: mySubTitle;
+}
+
+div.TabContent h2 {
+    font-family: mySubTitle;
+}
+
+div.CollapsibleContent h2 {
+    font-family: mySubTitle;
+}
+
+div.TextBox h3 {
+    font-family: myText;
+    font-size: 18px;
+}
+
+div.TabContent h3 {
+    font-family: myText;
+}
+
+div.CollapsibleContent h3 {
     font-family: myText;
 }
 
 div.TextBox h4 {
     font-family: myText;
+    font-size: 18px;
+}
+
+div.TabContent h4 {
+    font-family: myText;
+}
+
+div.CollapsibleContent h4 {
+    font-family: myText;
+    font-size: 13px;
+}
+
+button.Tab {
+    font-family: mySubTitle;
+}
+
+div.bottomleft h4 {
+    font-family: myTitle;
+    font-size: 13px;
 }
 
 div.TextBox img {
@@ -668,12 +713,12 @@ div.left {
 div.bottomleft {
     display: flex;
     align-content: center;
-    justify-content: flex-start;
-    left: 10px;
+    justify-content: center;
+    left: 3%;
     position: absolute;
     color: #807d7d;
+    margin-top: 14px;
     height: 4px;
-    te
 }
 /*-----------------------------------------------------------------------------------------------*/
 
